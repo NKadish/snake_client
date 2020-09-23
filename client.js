@@ -19,6 +19,10 @@ const connect = function() {
   conn.on('connect', () => {
     conn.write('Name: NK');
   });
+  conn.on('connect', () => {
+    // conn.write('Move: up');
+    // setInterval(function () { conn.write('Move: left') }, 3000); Hardcoded move around messages
+  });
   return conn;
 }
 
