@@ -24,6 +24,24 @@ const setupInput = function(conn) {
       if (key === 'd') {
         conn.write('Move: right');
       }
+      if (key === 'q') {
+        conn.write('Say: Shazbot!');
+      }
+      if (key === 'e') {
+        conn.write('Say: Nice play!');
+      }
+      if (key === 'z') {
+        conn.write('Say: I\'m growing');
+      }
+      if (key === 'f') {
+        conn.write('Say: Lomg');
+      }
+      if (key === 'r') {
+        conn.write('Say: Henlo');
+      }
+      if (key === 'x') {
+        conn.write('Say: This one\'s mine!');
+      }
       // \u0003 maps to ctrl+c input
       if (key === '\u0003') {
         process.exit();
